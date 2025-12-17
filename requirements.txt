@@ -1,0 +1,96 @@
+# Geopolitical Early-Warning System
+# Requirements.txt
+
+# Core LangChain/LangGraph (aligned with current 1.x APIs used in code)
+langchain==1.1.3
+langchain-core==1.2.0
+langgraph==1.0.4
+langsmith==0.4.59
+langchain-anthropic==1.2.0
+langchain-openai==1.1.2
+
+# LLM Providers
+anthropic==0.75.0
+openai==1.109.1
+
+# Vector Stores
+pinecone-client==3.0.0
+weaviate-client==4.4.0
+chromadb==0.4.22
+
+# Data Processing
+pandas==2.1.4
+polars==0.20.3
+numpy==1.26.2
+duckdb==0.9.2
+
+# NLP
+spacy==3.7.2
+sentence-transformers==2.2.2
+transformers==4.36.2
+# PyTorch 2.4+ supports Python 3.12; 2.1.2 lacks wheels for our Python version
+torch==2.4.1
+huggingface-hub==0.23.4
+
+# Event Streaming
+kafka-python==2.0.2
+confluent-kafka==2.3.0
+
+# Databases
+psycopg2-binary==2.9.9
+sqlalchemy==2.0.23
+redis==5.0.1
+neo4j==5.15.0
+
+# Time Series
+timescale==0.1.0
+
+# APIs & Web
+requests==2.31.0
+httpx==0.26.0
+fastapi==0.109.0
+uvicorn[standard]==0.25.0
+websockets==12.0
+pydantic==2.12.5
+pydantic-settings==2.12.0
+python-dotenv==1.0.0
+
+# Geospatial
+geopandas==0.14.1
+shapely==2.0.2
+
+# Monitoring
+prometheus-client==0.19.0
+sentry-sdk==1.39.2
+
+# Cloud
+boto3==1.34.17
+awscli==1.32.17
+
+# Utilities
+python-dateutil==2.8.2
+pytz==2023.3
+tenacity==8.2.3
+pyyaml==6.0.1
+jinja2==3.1.3
+aiohttp==3.9.1
+
+# Development
+pytest==7.4.4
+pytest-asyncio==0.23.3
+black==24.1.0
+ruff==0.1.13
+mypy==1.8.0
+pre-commit==3.6.0
+
+# Visualization
+streamlit==1.29.0
+plotly==5.18.0
+matplotlib==3.8.2
+
+# GDELT
+gdelt==0.1.14
+
+# News APIs
+newsapi-python==0.2.7
+eventregistry==9.1

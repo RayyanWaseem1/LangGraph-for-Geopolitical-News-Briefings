@@ -1,0 +1,32 @@
+# Environments and secrets
+.env
+.env.*
+*.env
+!.env.example
+/.venv/
+/venv/
+/.venv_*/
+/.python-version
+
+# Caches and artifacts
+__pycache__/
+*.py[cod]
+*.log
+/cache/
+/cache/hf/
+/data/
+/logs/
+/models/
+/cache_dir/
+
+# OS / editor
+.DS_Store
+.idea/
+.vscode/*
+!.vscode/settings.json
+
+# Dependency / package build
+*.egg-info/
+*.egg
+dist/
+build/

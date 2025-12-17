@@ -1,0 +1,440 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2822
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 (.venv) (base) rayyanwaseem@Mac Geopolitical % python -m Pipeline.run_pipeline\
+\
+    \uc0\u9556 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9559 \
+    \uc0\u9553   OSINT AI - Geopolitical Early-Warning System             \u9553 \
+    \uc0\u9553   Intelligence Pipeline Execution                           \u9553 \
+    \uc0\u9562 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9552 \u9565 \
+    \
+2025-12-16 14:39:30,192 - Storage.database_manager - INFO - Database manager initialized: localhost\
+2025-12-16 14:39:30,193 - __main__ - INFO - OSINT AI Pipeline initialized\
+2025-12-16 14:39:30,193 - __main__ - INFO - Checking system status...\
+/Users/rayyanwaseem/Desktop/Projects/Geopolitical/Pipeline/run_pipeline.py:186: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).\
+  "timestamp": datetime.utcnow().isoformat(),\
+2025-12-16 14:39:30,310 - Data.Gdelt_client - INFO - GDELT query: 20251216192430 to 20251216193930\
+2025-12-16 14:39:30,481 - Data.Gdelt_client - ERROR - Error fetching GDELT events: Expecting value: line 1 column 1 (char 0); body='Timespan is too short.\\n'\
+\
+\uc0\u55357 \u56589  System Status Check\
+  Database: \uc0\u9989 \
+  GDELT API: \uc0\u10060 \
+2025-12-16 14:39:30,516 - __main__ - WARNING - GDELT API connectivity issue. Continuing anyway...\
+\
+\uc0\u55357 \u56522  Last 24h Statistics:\
+  Events: 0\
+  Alerts: 0\
+\
+\uc0\u55357 \u56960  Starting intelligence pipeline...\
+\
+2025-12-16 14:39:30,516 - __main__ - INFO - ================================================================================\
+2025-12-16 14:39:30,516 - __main__ - INFO - Starting OSINT AI Intelligence Pipeline\
+2025-12-16 14:39:30,516 - __main__ - INFO - ================================================================================\
+2025-12-16 14:39:30,516 - __main__ - INFO - \
+[1/4] Fetching events from GDELT...\
+2025-12-16 14:39:30,516 - __main__ - INFO - Fetching GDELT events (lookback: 120m, max: 200)\
+2025-12-16 14:39:30,516 - Data.Gdelt_client - INFO - GDELT query: 20251216173930 to 20251216193930\
+2025-12-16 14:39:31,604 - Data.Gdelt_client - INFO - Fetched 200 GDELT articles from last 120 minutes\
+2025-12-16 14:39:31,605 - __main__ - INFO - Fetched 200 raw articles from GDELT\
+2025-12-16 14:39:31,615 - __main__ - INFO - Parsed 200 valid events\
+2025-12-16 14:39:31,615 - __main__ - INFO - \
+[2/4] Processing 200 events through LangGraph workflow...\
+2025-12-16 14:39:31,616 - Pipeline.Intelligence_workflow - INFO - Starting the intelligence pipeline with 200 events\
+2025-12-16 14:39:31,629 - Pipeline.Intelligence_workflow - INFO - Starting the ingestion agent\
+2025-12-16 14:39:31,632 - Pipeline.Intelligence_workflow - INFO - Validated 200/200 events\
+2025-12-16 14:39:31,633 - Pipeline.Intelligence_workflow - INFO - Starting the classification agent\
+2025-12-16 14:39:33,550 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"\
+2025-12-16 14:39:37,160 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"\
+2025-12-16 14:39:40,947 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"\
+2025-12-16 14:39:44,432 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"\
+2025-12-16 14:39:47,888 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"\
+2025-12-16 14:39:51,591 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"\
+2025-12-16 14:39:55,180 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"\
+2025-12-16 14:39:59,008 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"\
+2025-12-16 14:40:02,616 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"\
+2025-12-16 14:40:06,300 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"\
+2025-12-16 14:40:09,822 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"\
+2025-12-16 14:40:13,458 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"\
+2025-12-16 14:40:17,202 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"\
+2025-12-16 14:40:20,405 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"\
+2025-12-16 14:40:24,363 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"\
+2025-12-16 14:40:27,777 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"\
+2025-12-16 14:40:31,716 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"\
+2025-12-16 14:40:35,115 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"\
+2025-12-16 14:40:39,109 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"\
+2025-12-16 14:40:42,798 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"\
+2025-12-16 14:40:46,995 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"\
+2025-12-16 14:40:50,330 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"\
+2025-12-16 14:40:54,057 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"\
+2025-12-16 14:40:57,538 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"\
+2025-12-16 14:41:01,014 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"\
+2025-12-16 14:41:05,631 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"\
+2025-12-16 14:41:09,430 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"\
+2025-12-16 14:41:13,076 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"\
+2025-12-16 14:41:16,552 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"\
+2025-12-16 14:41:21,464 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"\
+2025-12-16 14:41:25,292 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"\
+2025-12-16 14:41:28,269 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"\
+2025-12-16 14:41:31,743 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"\
+2025-12-16 14:41:35,429 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"\
+2025-12-16 14:41:39,523 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"\
+2025-12-16 14:41:42,904 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"\
+2025-12-16 14:41:46,794 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"\
+2025-12-16 14:41:49,968 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"\
+2025-12-16 14:41:53,449 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"\
+2025-12-16 14:41:57,073 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"\
+2025-12-16 14:42:00,514 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"\
+2025-12-16 14:42:04,690 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"\
+2025-12-16 14:42:08,605 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"\
+2025-12-16 14:42:12,401 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"\
+2025-12-16 14:42:16,182 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"\
+2025-12-16 14:42:20,073 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"\
+2025-12-16 14:42:23,761 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"\
+2025-12-16 14:42:27,549 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"\
+2025-12-16 14:42:31,339 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"\
+2025-12-16 14:42:34,967 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"\
+2025-12-16 14:42:39,404 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"\
+2025-12-16 14:42:42,865 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"\
+2025-12-16 14:42:46,604 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"\
+2025-12-16 14:42:50,284 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"\
+2025-12-16 14:42:53,968 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"\
+2025-12-16 14:42:58,065 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"\
+2025-12-16 14:43:02,057 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"\
+2025-12-16 14:43:05,640 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"\
+2025-12-16 14:43:09,737 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"\
+2025-12-16 14:43:14,753 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"\
+2025-12-16 14:43:18,748 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"\
+2025-12-16 14:43:22,511 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"\
+2025-12-16 14:43:26,635 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"\
+2025-12-16 14:43:30,942 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"\
+2025-12-16 14:43:34,741 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"\
+2025-12-16 14:43:38,002 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"\
+2025-12-16 14:43:41,994 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"\
+2025-12-16 14:43:46,939 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"\
+2025-12-16 14:43:50,902 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"\
+2025-12-16 14:43:54,792 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"\
+2025-12-16 14:43:58,583 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"\
+2025-12-16 14:44:02,064 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"\
+2025-12-16 14:44:06,160 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"\
+2025-12-16 14:44:10,049 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"\
+2025-12-16 14:44:14,321 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"\
+2025-12-16 14:44:18,141 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"\
+2025-12-16 14:44:21,521 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"\
+2025-12-16 14:44:25,205 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"\
+2025-12-16 14:44:29,211 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"\
+2025-12-16 14:44:32,314 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"\
+2025-12-16 14:44:35,893 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"\
+2025-12-16 14:44:39,031 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"\
+2025-12-16 14:44:42,719 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"\
+2025-12-16 14:44:46,609 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"\
+2025-12-16 14:44:50,641 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"\
+2025-12-16 14:44:54,225 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"\
+2025-12-16 14:44:57,874 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"\
+2025-12-16 14:45:01,358 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"\
+2025-12-16 14:45:05,287 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"\
+2025-12-16 14:45:09,136 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"\
+2025-12-16 14:45:12,720 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"\
+2025-12-16 14:45:16,359 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"\
+2025-12-16 14:45:20,095 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"\
+2025-12-16 14:45:23,882 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"\
+2025-12-16 14:45:27,773 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"\
+2025-12-16 14:45:32,693 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"\
+2025-12-16 14:45:36,252 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"\
+2025-12-16 14:45:39,655 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"\
+2025-12-16 14:45:43,543 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"\
+2025-12-16 14:45:47,434 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"\
+2025-12-16 14:45:48,943 - Pipeline.Intelligence_workflow - INFO - Classified 100 events\
+2025-12-16 14:45:48,948 - Pipeline.Intelligence_workflow - INFO - Starting the pattern matching agent\
+2025-12-16 14:45:56,446 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"\
+2025-12-16 14:45:56,450 - Pipeline.Intelligence_workflow - INFO - Pattern analysis for 34e64d07-700e-47dd-a6a1-9f55759a7e3a: Analysis of Sudan Humanitarian Crisis:\
+\
+Historical Parallel: Rwandan Genocide (1994)\
+\
+Key Similarities:\
+1. Ethnic and factional conflict\
+2. Systematic violence against civilian populations\
+3. Breakdow...\
+2025-12-16 14:46:03,309 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"\
+2025-12-16 14:46:03,314 - Pipeline.Intelligence_workflow - INFO - Pattern analysis for 810d24b5-1c2e-4cb3-99dc-38bec4fe8493: Analysis of Palestinian Refugee Crisis Scenario:\
+\
+Historical Parallel: 1948 Nakba (Catastrophic Displacement)\
+\
+Key Similarities:\
+- Forced displacement of Palestinian refugees\
+- Systematic destruction ...\
+2025-12-16 14:46:10,169 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"\
+2025-12-16 14:46:10,172 - Pipeline.Intelligence_workflow - INFO - Pattern analysis for a3aed19c-9e8a-4c04-b5bf-feff4b660769: Geopolitical Analysis: Venezuela-Iran Nuclear Collaboration\
+\
+Historical Parallel: North Korea-Pakistan Nuclear Technology Transfer (1990s-2000s)\
+\
+Key Similarities:\
+1. Rogue state collaboration\
+2. Circ...\
+2025-12-16 14:46:17,078 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"\
+2025-12-16 14:46:17,082 - Pipeline.Intelligence_workflow - INFO - Pattern analysis for e3a4391c-fe88-46a1-9355-a429b1606c81: Historical Analysis of Potential Terrorist Threat Against European Christmas Markets:\
+\
+Historical Parallel: European Terrorist Attacks (2015-2016 Period)\
+\
+Key Contextual Similarities:\
+- Targeting of c...\
+2025-12-16 14:46:25,220 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"\
+2025-12-16 14:46:25,224 - Pipeline.Intelligence_workflow - INFO - Pattern analysis for 6997073c-f1ca-4c97-a95b-c44409738b0f: Analysis of Potential Terrorist Incident in Australia:\
+\
+Historical Parallel: Comparable Mass Violence Incidents\
+\
+Most Relevant Historical Parallel: Port Arthur Massacre (Australia, 1996)\
+- Similar cha...\
+2025-12-16 14:46:33,604 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"\
+2025-12-16 14:46:33,608 - Pipeline.Intelligence_workflow - INFO - Pattern analysis for 0d1ec763-8328-4458-a435-488d18f62132: Analysis of Humanitarian Access Restrictions in Gaza\
+\
+Historical Parallel: Humanitarian Access Restrictions in Conflict Zones\
+\
+Most Relevant Historical Comparison: Bosnia-Herzegovina Humanitarian Corr...\
+2025-12-16 14:46:40,520 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"\
+2025-12-16 14:46:40,524 - Pipeline.Intelligence_workflow - INFO - Pattern analysis for 61f4e18b-3f12-4959-8e26-c0396fbd5ede: Analysis of Domestic Terrorism Patterns:\
+\
+Historical Parallel: 1990s Domestic Terrorism Cycle in the United States\
+\
+Key Similarities:\
+- Ideologically motivated lone wolf actors\
+- Increasing polarizati...\
+2025-12-16 14:46:48,178 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"\
+2025-12-16 14:46:48,181 - Pipeline.Intelligence_workflow - INFO - Pattern analysis for f931ad06-ee6f-452f-b1b9-bd4c1572297c: Analysis Framework:\
+\
+Historical Context Analysis:\
+1. Limited Information Challenge\
+- Insufficient specific details about the attack\
+- Generic terrorism description prevents precise mapping\
+\
+Potential ...\
+2025-12-16 14:46:56,045 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"\
+2025-12-16 14:46:56,048 - Pipeline.Intelligence_workflow - INFO - Pattern analysis for 28d2b83d-8493-45f6-9e54-e682833f6022: Geopolitical Analysis of Bondi Beach Terrorist Incident:\
+\
+Historical Parallel: Sydney Siege (2014)\
+\
+Key Similarities:\
+- Urban terrorist incident in Australia\
+- Unexpected attack in a public, symbolic ...\
+2025-12-16 14:47:04,236 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"\
+2025-12-16 14:47:04,240 - Pipeline.Intelligence_workflow - INFO - Pattern analysis for 6a608523-7e64-48e9-b728-a6d1ac258e62: Geopolitical Analysis:\
+\
+Historical Parallel: Domestic Anti-Government Extremism (Sovereign Citizen Movement)\
+\
+Key Similarities:\
+- Lone-wolf actor targeting government institutions\
+- Ideologically moti...\
+2025-12-16 14:47:12,225 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"\
+2025-12-16 14:47:12,229 - Pipeline.Intelligence_workflow - INFO - Pattern analysis for d468fc14-ea63-4864-9ad4-b49b6b36d1c7: Geopolitical Analysis: Bondi Beach Terrorist Incident\
+\
+Historical Parallel: Mumbai Terror Attacks (2008)\
+\
+Key Similarities:\
+- Terrorist targeting of public civilian spaces\
+- Inspiration from internati...\
+2025-12-16 14:47:20,414 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"\
+2025-12-16 14:47:20,417 - Pipeline.Intelligence_workflow - INFO - Pattern analysis for b654e3ce-816c-48be-9ba4-bb80e8121c62: Geopolitical Analysis: Colombian Terrorist Attacks in Cali\
+\
+Historical Context:\
+The event reflects Colombia's long-standing internal conflict involving multiple non-state armed actors, primarily roote...\
+2025-12-16 14:47:27,991 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"\
+2025-12-16 14:47:27,995 - Pipeline.Intelligence_workflow - INFO - Pattern analysis for ccf06fec-a9cb-4228-9552-00e040ca69aa: Analysis of Potential Terrorist Incident at Bondi Beach:\
+\
+Historical Parallel: Mumbai Terror Attacks (2008)\
+\
+Key Similarities:\
+- Urban public space targeted\
+- Potential coordinated attack strategy\
+- S...\
+2025-12-16 14:47:35,976 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"\
+2025-12-16 14:47:35,980 - Pipeline.Intelligence_workflow - INFO - Pattern analysis for b81882ca-3690-4997-bd31-4c5b88178ff5: Geopolitical Analysis: Bondi Junction Terrorist Incident\
+\
+Historical Parallel: Mumbai Terror Attacks (2008)\
+\
+Key Similarities:\
+- Urban public space attack\
+- Potential terrorist/extremist motivation\
+- ...\
+2025-12-16 14:47:43,557 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"\
+2025-12-16 14:47:43,558 - Pipeline.Intelligence_workflow - INFO - Pattern analysis for cfc42797-ab64-4d88-aec7-893b84d9fdd9: Geopolitical Analysis:\
+\
+Historical Parallel: Colombian Urban Insurgency Dynamics (1980-2000)\
+\
+Key Contextual Insights:\
+1. Structural Similarities\
+- Urban terrorism targeting law enforcement\
+- Potentia...\
+2025-12-16 14:47:52,367 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"\
+2025-12-16 14:47:52,371 - Pipeline.Intelligence_workflow - INFO - Pattern analysis for 0d311042-8493-4b55-83ab-e37b3eec63f1: Geopolitical Analysis: Bondi Junction Terrorist Incident\
+\
+Historical Parallel: Mumbai Terror Attacks (2008)\
+\
+Key Similarities:\
+1. Terrorist actors inspired by transnational Islamic extremist ideology\
+...\
+2025-12-16 14:47:59,239 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"\
+2025-12-16 14:47:59,243 - Pipeline.Intelligence_workflow - INFO - Pattern analysis for a5ef3b69-e11f-4d47-8792-30f66393d337: Geopolitical Analysis: US Naval Strikes in Pacific\
+\
+Historical Parallel: Gulf of Tonkin Incident (1964)\
+\
+Key Similarities:\
+- Undefined maritime engagement\
+- US military responding to perceived threat\
+...\
+2025-12-16 14:48:07,721 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"\
+2025-12-16 14:48:07,724 - Pipeline.Intelligence_workflow - INFO - Pattern analysis for 96c2fc7f-ec48-4bed-a76a-6102cd20b9f3: Geopolitical Analysis:\
+\
+Historical Parallel: Insurgent Attacks on Foreign Economic Interests in Developing Regions\
+\
+Key Contextual Parallels:\
+1. Mau Mau Uprising (Kenya, 1952-1960)\
+- Similar pattern o...\
+2025-12-16 14:48:14,685 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"\
+2025-12-16 14:48:14,690 - Pipeline.Intelligence_workflow - INFO - Pattern analysis for 91d817b1-d556-4c09-aee2-2776aa9c08be: Geopolitical Analysis: Bondi Beach Terror Attack\
+\
+Historical Parallel: Mumbai Terror Attacks (2008)\
+\
+Key Similarities:\
+- Non-state actor from India\
+- Urban public space targeted\
+- Unexpected terrorist...\
+2025-12-16 14:48:22,467 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"\
+2025-12-16 14:48:22,470 - Pipeline.Intelligence_workflow - INFO - Pattern analysis for 97febdff-049e-4ac5-9227-a8e1c442a677: Geopolitical Analysis:\
+\
+Historical Parallel: Lone-Wolf Urban Terrorism\
+\
+Key Contextual Insights:\
+1. Comparative Case: Similar to the 2014 Sydney Siege by Man Haron Monis, another individual terrorist ...\
+2025-12-16 14:48:22,472 - Pipeline.Intelligence_workflow - INFO - Starting the escalation prediction agent\
+2025-12-16 14:48:26,869 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"\
+2025-12-16 14:48:30,967 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"\
+2025-12-16 14:48:36,087 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"\
+2025-12-16 14:48:39,980 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"\
+2025-12-16 14:48:43,707 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"\
+2025-12-16 14:48:47,454 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"\
+2025-12-16 14:48:51,251 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"\
+2025-12-16 14:48:55,441 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"\
+2025-12-16 14:48:59,027 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"\
+2025-12-16 14:49:02,991 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"\
+2025-12-16 14:49:07,012 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"\
+2025-12-16 14:49:11,313 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"\
+2025-12-16 14:49:15,662 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"\
+2025-12-16 14:49:21,145 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"\
+2025-12-16 14:49:25,136 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"\
+2025-12-16 14:49:28,722 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"\
+2025-12-16 14:49:33,228 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"\
+2025-12-16 14:49:37,323 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"\
+2025-12-16 14:49:42,238 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"\
+2025-12-16 14:49:47,432 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"\
+2025-12-16 14:49:51,443 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"\
+2025-12-16 14:49:55,458 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"\
+2025-12-16 14:49:59,603 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"\
+2025-12-16 14:50:03,593 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"\
+2025-12-16 14:50:03,598 - Pipeline.Intelligence_workflow - INFO - Generated 24 escalation predictions\
+2025-12-16 14:50:03,600 - Pipeline.Intelligence_workflow - INFO - Starting alert generation agent\
+2025-12-16 14:50:03,601 - Pipeline.Intelligence_workflow - INFO - Generated 24 alerts\
+2025-12-16 14:50:03,602 - Pipeline.Intelligence_workflow - INFO - Starting brief generation agent\
+2025-12-16 14:50:10,698 - httpx - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"\
+2025-12-16 14:50:10,702 - Pipeline.Intelligence_workflow - INFO - Generated intelligence brief\
+2025-12-16 14:50:10,703 - Pipeline.Intelligence_workflow - INFO - Pipeline complete. Generated brief with 24 alerts\
+2025-12-16 14:50:10,704 - __main__ - INFO - \
+[3/4] Saving results to database...\
+2025-12-16 14:50:10,706 - Storage.database_manager - ERROR - Database session error: Object of type UUID is not JSON serializable\
+2025-12-16 14:50:10,706 - Storage.database_manager - ERROR - Error saving brief: Object of type UUID is not JSON serializable\
+2025-12-16 14:50:10,722 - Storage.database_manager - ERROR - Database session error: (psycopg2.errors.UndefinedColumn) column "cluster_id" of relation "threat_alerts" does not exist\
+LINE 3:                         alert_id, cluster_id, alert_level, t...\
+                                          ^\
+\
+[SQL: \
+                    INSERT INTO threat_alerts (\
+                        alert_id, cluster_id, alert_level, title, summary,\
+                        detailed_analysis, threat_category, region,\
+                        escalation_probability, supporting_events, source_urls,\
+                        created_at, expires_at, sent_to, acknowledged\
+                    ) VALUES (\
+                        %(alert_id)s, %(cluster_id)s, %(alert_level)s, %(title)s, %(summary)s,\
+                        %(detailed_analysis)s, %(threat_category)s, %(region)s,\
+                        %(escalation_probability)s, %(supporting_events)s, %(source_urls)s,\
+                        %(created_at)s, %(expires_at)s, %(sent_to)s, %(acknowledged)s\
+                    )\
+                ]\
+[parameters: \{'alert_id': UUID('e11b0943-53ed-45c1-9d2f-4687de6efafc'), 'cluster_id': 0, 'alert_level': 'critical', 'title': 'CRITICAL: El autor del ataque terrorista en Bondi Beach sali\'f3 del estado de coma mientras siguen las investigaciones sobre el hecho', 'summary': 'Ongoing complex humanitarian crisis with multiple armed factions and systemic instability creating high potential for further violent conflict escalation.', 'detailed_analysis': 'Ongoing complex humanitarian crisis with multiple armed factions and systemic instability creating high potential for further violent conflict escalation.', 'threat_category': 'terrorism', 'region': 'Unknown', 'escalation_probability': 0.82, 'supporting_events': ['28d2b83d-8493-45f6-9e54-e682833f6022', '0d1ec763-8328-4458-a435-488d18f62132', 'bb33b793-99c5-4712-a3a6-3001643a5f1e'], 'source_urls': ['https://www.infobae.com/america/mundo/2025/12/16/el-autor-del-ataque-terrorista-en-bondi-beach-salio-del-estado-de-coma-mientras-siguen-las-investig ... (134 characters truncated) ... registrement-imposees-par-israel-_fil-7111973_actu.Htm', 'https://www.theguardian.com/world/2025/dec/16/gulf-clan-colombia-us-terrorist-organization'], 'created_at': datetime.datetime(2025, 12, 16, 19, 50, 3, 600998), 'expires_at': None, 'sent_to': [], 'acknowledged': False\}]\
+(Background on this error at: https://sqlalche.me/e/20/f405)\
+2025-12-16 14:50:10,722 - Storage.database_manager - ERROR - Error saving alert: (psycopg2.errors.UndefinedColumn) column "cluster_id" of relation "threat_alerts" does not exist\
+LINE 3:                         alert_id, cluster_id, alert_level, t...\
+                                          ^\
+\
+[SQL: \
+                    INSERT INTO threat_alerts (\
+                        alert_id, cluster_id, alert_level, title, summary,\
+                        detailed_analysis, threat_category, region,\
+                        escalation_probability, supporting_events, source_urls,\
+                        created_at, expires_at, sent_to, acknowledged\
+                    ) VALUES (\
+                        %(alert_id)s, %(cluster_id)s, %(alert_level)s, %(title)s, %(summary)s,\
+                        %(detailed_analysis)s, %(threat_category)s, %(region)s,\
+                        %(escalation_probability)s, %(supporting_events)s, %(source_urls)s,\
+                        %(created_at)s, %(expires_at)s, %(sent_to)s, %(acknowledged)s\
+                    )\
+                ]\
+[parameters: \{'alert_id': UUID('e11b0943-53ed-45c1-9d2f-4687de6efafc'), 'cluster_id': 0, 'alert_level': 'critical', 'title': 'CRITICAL: El autor del ataque terrorista en Bondi Beach sali\'f3 del estado de coma mientras siguen las investigaciones sobre el hecho', 'summary': 'Ongoing complex humanitarian crisis with multiple armed factions and systemic instability creating high potential for further violent conflict escalation.', 'detailed_analysis': 'Ongoing complex humanitarian crisis with multiple armed factions and systemic instability creating high potential for further violent conflict escalation.', 'threat_category': 'terrorism', 'region': 'Unknown', 'escalation_probability': 0.82, 'supporting_events': ['28d2b83d-8493-45f6-9e54-e682833f6022', '0d1ec763-8328-4458-a435-488d18f62132', 'bb33b793-99c5-4712-a3a6-3001643a5f1e'], 'source_urls': ['https://www.infobae.com/america/mundo/2025/12/16/el-autor-del-ataque-terrorista-en-bondi-beach-salio-del-estado-de-coma-mientras-siguen-las-investig ... (134 characters truncated) ... registrement-imposees-par-israel-_fil-7111973_actu.Htm', 'https://www.theguardian.com/world/2025/dec/16/gulf-clan-colombia-us-terrorist-organization'], 'created_at': datetime.datetime(2025, 12, 16, 19, 50, 3, 600998), 'expires_at': None, 'sent_to': [], 'acknowledged': False\}]\
+(Background on this error at: https://sqlalche.me/e/20/f405)\
+2025-12-16 14:50:10,722 - __main__ - INFO - \uc0\u10003  Saved 0/1 alerts\
+2025-12-16 14:50:10,722 - __main__ - INFO - \
+[4/4] Pipeline complete!\
+\
+================================================================================\
+ INTELLIGENCE BRIEF\
+================================================================================\
+\
+\uc0\u55357 \u56517  Date: 2025-12-16 19:50 UTC\
+\uc0\u55356 \u57325  Generated by: OSINT-AI-System v1.0\
+\
+\uc0\u55357 \u56522  STATISTICS\
+  \'95 Total Events Processed: 100\
+  \'95 New Alerts: 24\
+  \'95 Ongoing Situations: 24\
+\
+\uc0\u55357 \u56541  EXECUTIVE SUMMARY\
+--------------------------------------------------------------------------------\
+DAILY INTELLIGENCE BRIEF\
+Date: [Current Date]\
+Total Events Processed: 100\
+Classification: SENSITIVE\
+\
+EXECUTIVE SUMMARY:\
+Multiple high-alert situations indicate elevated global security risks, with particular concern around terrorist activities, humanitarian tensions, and domestic extremism. Ongoing investigations and potential for retaliatory actions suggest a complex and volatile security landscape.\
+\
+CRITICAL ALERTS:\
+\
+1. TERRORIST INCIDENT - BONDI BEACH\
+- Location: Australia (Specific region un...\
+\
+\uc0\u55357 \u57000  CRITICAL ALERTS (1)\
+--------------------------------------------------------------------------------\
+\
+1. [CRITICAL] CRITICAL: El autor del ataque terrorista en Bondi Beach sali\'f3 del estado de coma mientras siguen las investigaciones sobre el hecho\
+   Region: Unknown\
+   Category: terrorism\
+   Escalation Probability: 82%\
+   Summary: Ongoing complex humanitarian crisis with multiple armed factions and systemic instability creating high potential for further violent conflict escalation....\
+   Sources: 3 URLs\
+\
+\uc0\u55357 \u56385 \u65039   WATCH LIST (23 items)\
+--------------------------------------------------------------------------------\
+  \'95 Watch item\
+  \'95 Watch item\
+  \'95 Watch item\
+\
+================================================================================\
+ END OF BRIEF\
+================================================================================\
+\
+2025-12-16 14:50:10,722 - __main__ - INFO - \uc0\u9989  Pipeline execution successful!\
+/Users/rayyanwaseem/Desktop/Projects/Geopolitical/Pipeline/run_pipeline.py:247: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).\
+  brief_filename = f"brief_\{datetime.utcnow().strftime('%Y%m%d_%H%M%S')\}.txt"\
+2025-12-16 14:50:10,725 - __main__ - INFO - \uc0\u55357 \u56516  Brief saved to: brief_20251216_195010.txt\
+(.venv) (base) rayyanwaseem@Mac Geopolitical % }
