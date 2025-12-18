@@ -19,6 +19,21 @@ __pycache__/
 /models/
 /cache_dir/
 
+# Data (track files, but keep secrets out)
+!/Data/
+!/Data/**
+/Data/**/*.env
+/Data/**/.env.*
+/Data/**/*apikey*
+/Data/**/*api_key*
+/Data/**/*token*
+/Data/**/*secret*
+/Data/**/*credentials*
+/Data/**/*.key
+/Data/**/*.pem
+/Data/**/*.p12
+/Data/**/*.pfx
+
 # OS / editor
 .DS_Store
 .idea/
