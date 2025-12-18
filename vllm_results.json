@@ -1,0 +1,70 @@
+{
+  "engine": "vLLM",
+  "model": "Qwen/Qwen2.5-7B-Instruct",
+  "total_requests": 10,
+  "avg_time_per_request": 15.01,
+  "avg_tokens_per_sec": 30.03,
+  "total_tokens_generated": 4507,
+  "results": [
+    {
+      "request": 1,
+      "total_time": 9.049266815185547,
+      "tokens": 272,
+      "tokens_per_sec": 30.057683738925416
+    },
+    {
+      "request": 2,
+      "total_time": 16.6063711643219,
+      "tokens": 500,
+      "tokens_per_sec": 30.10892596898167
+    },
+    {
+      "request": 3,
+      "total_time": 12.072104215621948,
+      "tokens": 363,
+      "tokens_per_sec": 30.069322921372613
+    },
+    {
+      "request": 4,
+      "total_time": 16.041444540023804,
+      "tokens": 482,
+      "tokens_per_sec": 30.047169305569582
+    },
+    {
+      "request": 5,
+      "total_time": 16.649481773376465,
+      "tokens": 500,
+      "tokens_per_sec": 30.030964735462845
+    },
+    {
+      "request": 6,
+      "total_time": 12.989196062088013,
+      "tokens": 390,
+      "tokens_per_sec": 30.02495290207418
+    },
+    {
+      "request": 7,
+      "total_time": 16.655771255493164,
+      "tokens": 500,
+      "tokens_per_sec": 30.01962456917732
+    },
+    {
+      "request": 8,
+      "total_time": 16.66355872154236,
+      "tokens": 500,
+      "tokens_per_sec": 30.0055953446252
+    },
+    {
+      "request": 9,
+      "total_time": 16.67818522453308,
+      "tokens": 500,
+      "tokens_per_sec": 29.97928091507917
+    },
+    {
+      "request": 10,
+      "total_time": 16.693901777267456,
+      "tokens": 500,
+      "tokens_per_sec": 29.951056779360215
+    }
+  ]
+}
