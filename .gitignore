@@ -34,6 +34,10 @@ __pycache__/
 /Data/**/*.p12
 /Data/**/*.pfx
 
+# Local-only config and DB init
+/Data/settings.py
+/Data/init_db.sql
+
 # OS / editor
 .DS_Store
 .idea/
