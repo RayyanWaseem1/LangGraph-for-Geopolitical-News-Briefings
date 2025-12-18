@@ -64,7 +64,7 @@ class OSINTAnalyzer:
 
     def __init__(self, api_key: str):
         self.client = anthropic.Anthropic(api_key = api_key)
-        self.model = "claude-3-5-sonnet-20241022"
+        self.model = "claude-3-5-haiku-20241022"
 
     def _get_first_text_block(self, content: List[Any]) -> str:
         for block in content:
