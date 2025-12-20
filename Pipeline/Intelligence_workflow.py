@@ -76,7 +76,7 @@ def get_primary_llm():
     #Getting the primary LLM (Claude Sonnet 3.5) for complex reasoning"
     api_key = settings.ANTHROPIC_API_KEY
     return ChatAnthropic(
-        model_name = "claude-3-5-haiku-20241022",
+        model_name = "claude-sonnet-4-5-20250929",
         temperature = 0.1,
         api_key = SecretStr(api_key),
         timeout = 60,
@@ -84,10 +84,10 @@ def get_primary_llm():
     )
 
 def get_fast_llm():
-    #Get fast LLM ("claude-3-5-haiku-20241022") for classification tasks
+    #Get fast LLM ("claude-sonnet-4-5-20250929") for classification tasks
     api_key = settings.ANTHROPIC_API_KEY
     return ChatAnthropic(
-        model_name = "claude-3-5-haiku-20241022",
+        model_name = "claude-sonnet-4-5-20250929",
         temperature = 0.1,
         api_key = SecretStr(api_key),
         timeout = 30,
