@@ -111,7 +111,7 @@ class OSINTAnalyzer:
     
     def __init__(self, api_key: str):
         self.client = anthropic.Anthropic(api_key=api_key)
-        self.model = "claude-sonnet-4-5-20250929"
+        self.model = "claude-3-5-haiku-20241022"
     
     def _get_first_text_block(self, content: List[Any]) -> str:
         """Extract text from response"""
