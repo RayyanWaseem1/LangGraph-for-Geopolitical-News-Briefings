@@ -2,3 +2,10 @@ streamlit>=1.28.0
 anthropic>=0.18.0
 requests>=2.31.0
 python-dotenv>=1.0.0
+numpy==1.26.2
+pandas==2.1.4
+gdelt==0.1.14
+newsapi-python==0.2.7
+eventregistry==9.1
+huggingface-hub>=0.34.0,<1.0
+sentence-transformers>=3.1,<3.3
